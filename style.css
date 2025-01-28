@@ -319,6 +319,45 @@
     100% { transform: scale(1); }
   }
   
+/* General mobile optimizations */
+@media (max-width: 767px) {
+    #sidepage {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 10px;
+    }
+    #sidepage ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0;
+    }
+    #sidepage ul a {
+        font-size: medium;
+        padding: 5px 10px;
+    }
 
+    .container1 img {
+        min-height: 50vh; /* Reduce the height of the image */
+        object-fit: cover; /* Crop image to fit within the container */
+    }
+
+    .top-left {
+        margin-top: 100px; /* Adjust for smaller screens */
+        font-size: large;
+    }
+
+    .timeline {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .contact-form {
+        width: 100%; /* Use full width */
+        margin-top: 20px;
+    }
+    }
+        
 
 
